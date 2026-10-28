@@ -1,0 +1,1 @@
+docker run --privileged -v /dev/v4l:/dev/v4l:ro -v /dev/serial/by-id:/dev/serial/by-id -v /dev/serial/by-path:/dev/serial/by-path -v /dev/input/by-id:/dev/input/by-id -it --user ros --network=host --gpus all --ipc=host -v /home/charlie/ros2_ws:/home/ros/ros2_ws -v /tmp/.X11-unix:/tmp/.X11-unix:rw --env=DISPLAY --name=humble_container humble
